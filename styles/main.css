@@ -62,13 +62,6 @@ nav {
   top: 26%; */
 }
 
-/* .burger-btn {
-  background: var(--buttonColor);
-  height: 5px;
-  width: 35px;
-  margin: 6px 0px;
-} */
-
 .menu-button {
   height: 40px;
   width: 40px;
@@ -76,45 +69,77 @@ nav {
 
 .mobile-navigation {
   position: absolute;
-  /* justify-content: flex-end; */
-  /* align-items: flex-start; */
-  right: -50vw;
-  width: 50vw;
+  right: -481px;
+  width: 481px;
   top: 0px;
-  height: auto;
+  height: 100vh;
   margin-top: 0px;
   z-index: 10;
-
-  /* width must be equal to right property */
-
-  /* todo write after this line */
-
-  background-color: var(--mobilemenuColor);
-}
-
-.mobile-navigation-container div,
-.mob-nav-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
+  flex-flow: column wrap;
+  background-color: var(--headerColor);
 }
 
-.mobile-navigation-links a {
+.mob-nav-links a {
   color: var(--headtextColor);
   text-decoration: none;
-  /* outline: 0.5px solid var(--headerColor); */
-  border-bottom: 2px solid var(--headerColor);
   padding: 25px 0px;
+  text-align: center;
+}
+
+.mob-nav-links {
+  display: flex;
+  flex-flow: column wrap;
+  padding-bottom: 53vh;
+}
+
+.mob-nav-links a:hover {
+  border-bottom: 2px solid var(--buttonColor);
+}
+
+.mob-nav-buttons a {
+  color: var(--headtextColor);
+  text-decoration: none;
+  padding: 25px 0px;
+  text-align: center;
+  width: 210px;
+}
+
+.mob-nav-buttons {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.mob-nav-signin {
+  font-size: 20px;
+  text-align: center;
+  background: var(--buttonColor);
+  color: var(--headtextColor);
+  text-decoration: none;
+  border-radius: 4px;
+  outline: 1.8px solid var(--buttonColor);
+}
+
+.mob-nav-signup {
+  color: var(--buttonColor);
+  text-decoration: none;
+  outline: 1.8px solid var(--buttonColor);
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .mobile-navigation-close-btn {
+  display: flex;
+  justify-content: center;
   color: var(--headtextColor);
   text-decoration: none;
-  /* outline: 0.5px solid var(--headerColor); */
-  border-bottom: 2px solid var(--headerColor);
   padding: 25px 0px;
+}
+
+.mobile-navigation-close-btn:hover {
+  border-bottom: 2px solid var(--buttonColor);
 }
 
 .mobile-navigation-animation-start {
@@ -124,7 +149,7 @@ nav {
 
 .mobile-navigation-animation-end {
   transition: 1s all;
-  right: -50vh;
+  right: -481px;
 }
 
 .commonlink {
@@ -133,7 +158,13 @@ nav {
   margin-right: 25px;
 }
 
-.fullbutton {
+.commonlink:hover {
+  padding-bottom: 25px;
+  border-bottom: 3px solid var(--buttonColor);
+  border-radius: 3px;
+}
+
+.signin {
   font-size: 20px;
   text-align: center;
   background: var(--buttonColor);
@@ -145,6 +176,17 @@ nav {
   outline: 1.8px solid var(--buttonColor);
 }
 
+.signin:hover {
+  color: var(--buttonColor);
+  text-decoration: none;
+  background: none;
+  outline: 1.8px solid var(--buttonColor);
+  border-radius: 4px;
+  /* padding: 12px 30px;
+  font-size: 20px;
+  text-align: center; */
+}
+
 .signup {
   color: var(--buttonColor);
   text-decoration: none;
@@ -153,6 +195,14 @@ nav {
   padding: 12px 30px;
   font-size: 20px;
   text-align: center;
+}
+
+.signup:hover {
+  background: var(--buttonColor);
+  color: var(--headtextColor);
+  text-decoration: none;
+  border-radius: 4px;
+  outline: 1.8px solid var(--buttonColor);
 }
 
 .welcome-section {
@@ -197,6 +247,7 @@ h4 {
   border-radius: 8px;
   margin-bottom: 30px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .app-link-container {
@@ -271,9 +322,17 @@ h4 {
   font-size: 16px;
   line-height: 24px;
   list-style-type: none;
-  text-transform: capitalize;
-  color: var(--headtextColor);
   margin: 10px 0 10px 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--headtextColor);
+  text-transform: capitalize;
+}
+
+.footer-link:hover {
+  color: var(--buttonColor);
 }
 
 .about-footer-lists {
@@ -285,7 +344,7 @@ h4 {
   margin-top: 55px;
 }
 
-.about-footer-lists div {
+.about-footer-list {
   display: flex;
   flex-direction: column;
 }
@@ -299,10 +358,18 @@ h4 {
 }
 
 .social-icons {
-  display: flex;
   color: var(--headtextColor);
   font-size: 32px;
-  width: 320px;
+  text-decoration: none;
+}
+
+.social-icons:hover {
+  color: var(--buttonColor);
+}
+
+.social-icons-container {
+  display: flex;
+  width: 17vw;
   justify-content: space-around;
   align-items: center;
 }
@@ -329,8 +396,6 @@ h4 {
   max-height: 1090px;
   min-height: 550px;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: flex-start;
   align-content: center;
 }
 
@@ -347,7 +412,7 @@ h4 {
 }
 
 .about-header {
-  margin: 0 50vw 50px 50px;
+  margin: 0 50vw 30px 50px;
 }
 
 .album-img {
@@ -427,6 +492,41 @@ p {
   margin-right: 17px;
 }
 
+@media (max-width: 1237px) {
+  .div-why-radiohead {
+    margin: 20px 60px 20px 0;
+  }
+
+  .radiohead-footer {
+    justify-content: center;
+  }
+
+  .about-footer-header {
+    margin: 30px 60px 30px 0;
+  }
+  .about-footer-list {
+    margin: 0 10px 0 10px;
+  }
+
+  .playlist-section {
+    justify-content: flex-start;
+  }
+
+  .playlist-article {
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 1124px) {
+  .about-header {
+    margin: 0 20vw 30px 50px;
+  }
+
+  .playlist-article {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 1090px) {
   .album-img {
     display: flex;
@@ -447,6 +547,10 @@ p {
     margin-top: 20px;
   }
 
+  .commonlink:hover {
+    padding-bottom: 15px;
+  }
+
   .welcome-section {
     padding: 120px 20px;
     height: auto;
@@ -462,6 +566,7 @@ p {
 
   .brand-section {
     flex-wrap: wrap;
+    padding: 20px;
   }
 
   .music-section {
@@ -474,6 +579,14 @@ p {
     padding: 20px 20px;
     height: auto;
     min-height: 470px;
+  }
+
+  .why-radiohead-section {
+    padding: 20px;
+  }
+
+  .radiohead-footer {
+    padding: 20px;
   }
 
   .album-img img {
@@ -491,12 +604,44 @@ p {
     padding: 0;
   }
 
+  .playlist-article {
+    margin-right: 30px;
+  }
+
   .album-img {
     max-width: 50%;
     max-height: 400px;
     margin: 0;
     padding: 0;
     flex-flow: column wrap;
+  }
+}
+
+@media (max-width: 833px) {
+  .radiohead-footer {
+    max-height: none;
+    flex-flow: column wrap;
+  }
+
+  .about-footer-header {
+    display: flex;
+    max-width: 95vw;
+    min-width: 85vw;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .about-footer-header img {
+    display: flex;
+    margin: 20px 0 30px 0;
+    height: 17px;
+  }
+
+  .about-footer-lists {
+    max-width: none;
+    min-width: auto;
   }
 }
 
@@ -557,9 +702,9 @@ p {
     flex-flow: column wrap;
   }
 
-  .playlist-img {
+  /* .playlist-img {
     flex-flow: column wrap;
-  }
+  } */
 
   .arrow-for-link {
     font-size: 32px;
@@ -569,8 +714,33 @@ p {
     font-size: 20px;
   }
 
+  h3 {
+    font-size: 32px;
+  }
+
   .article-link a {
     font-size: 20px;
+  }
+
+  .div-why-radiohead {
+    max-width: none;
+    min-width: auto;
+  }
+
+  .why-radiohead-section {
+    max-height: none;
+  }
+
+  h3 {
+    line-height: normal;
+  }
+
+  .div-why-radiohead p {
+    margin: 0;
+  }
+
+  .about-header {
+    margin: 20px;
   }
 
   /* .burger-btn {
@@ -578,4 +748,56 @@ p {
     flex-direction: column;
     justify-content: space-between;
   } */
+}
+
+@media (max-width: 635px) {
+  .about-footer-lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  .about-footer-list {
+    width: 40vw;
+  }
+
+  .playlist-article {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .album-img {
+    max-width: 50%;
+  }
+
+  .mobile-navigation-animation-end {
+    right: -100vw;
+  }
+
+  .mobile-navigation {
+    width: 100vw;
+  }
+
+  .mob-nav-buttons {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .mob-nav-buttons a {
+    margin-bottom: 20px;
+  }
+
+  .mob-nav-links {
+    padding-bottom: 40vh;
+  }
 }

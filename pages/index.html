@@ -14,7 +14,6 @@
   <body>
     <!-- todo Header -->
     <header>
-      <!-- <h1>radiohead</h1> -->
       <img
         class="radiohead-logo"
         src="../assets/images/RADIOHEAD.png"
@@ -24,19 +23,19 @@
         <a aria-label="contact" class="commonlink" href="#">contact</a>
         <a aria-label="plans" class="commonlink" href="#">plans</a>
         <a aria-label="blog" class="commonlink" href="#">blog</a>
-        <a aria-label="signin" class="fullbutton" href="#">sign in</a>
+        <a aria-label="signin" class="signin" href="#">sign in</a>
         <a aria-label="signup" class="signup" href="#">sign up</a>
       </nav>
       <nav class="mobile-navigation">
-        <div class="mobile-navigation-container">
-          <div class="mobile-navigation-close-btn">Close</div>
-          <div class="mobile-navigation-links">
-            <a class="mob-nav-links" aria-label="contact" href="#">contact</a>
-            <a class="mob-nav-links" aria-label="plans" href="#">plans</a>
-            <a class="mob-nav-links" aria-label="blog" href="#">blog</a>
-            <a class="mob-nav-links" aria-label="signin" href="#">sign in</a>
-            <a class="mob-nav-links" aria-label="signup" href="#">sign up</a>
-          </div>
+        <div class="mobile-navigation-close-btn">Close</div>
+        <div class="mob-nav-links">
+          <a aria-label="contact" href="#">contact</a>
+          <a aria-label="plans" href="#">plans</a>
+          <a aria-label="blog" href="#">blog</a>
+        </div>
+        <div class="mob-nav-buttons">
+          <a aria-label="signin" class="mob-nav-signin" href="#">sign in</a>
+          <a aria-label="signup" class="mob-nav-signup" href="#">sign up</a>
         </div>
       </nav>
       <div class="burger-btn">
@@ -46,9 +45,6 @@
           alt="menu-button"
         />
       </div>
-      <!--  <div class="burger-btn"></div>
-       <div class="burger-btn"></div>
-       <div class="burger-btn"></div> -->
     </header>
     <main>
       <!-- ! First section -->
@@ -56,7 +52,6 @@
         <div class="welcome-section-main-container">
           <h3>Discover, search, and play any song featuring voice control.</h3>
           <button class="for-free-btn">Try it free</button>
-          <!-- <a aria-label="tryitfree" class="forfree" href="#">Try it free</a> -->
           <div class="app-link-container">
             <a aria-label="appstore" class="app-link" href="#" target="_blank">
               <img src="../assets/images/AP.png" alt="AppStore" />
@@ -171,47 +166,53 @@
           </p>
         </div>
         <div class="about-footer-lists">
-          <div class="about-fotter-list">
+          <div class="about-footer-list">
             <h3 class="footer-h3">get started</h3>
             <ul class="footer-ul">
-              <li>get started</li>
-              <li>playlist import</li>
-              <li>supporte devices</li>
-              <li>get support</li>
+              <li><a class="footer-link" href="#">get started</a></li>
+              <li><a class="footer-link" href="#">playlist import</a></li>
+              <li><a class="footer-link" href="#">supporte devices</a></li>
+              <li><a class="footer-link" href="#">get support</a></li>
             </ul>
           </div>
-          <div class="about-fotter-list">
+          <div class="about-footer-list">
             <h3 class="footer-h3">discover</h3>
             <ul class="footer-ul">
-              <li>about</li>
-              <li>magazine</li>
+              <li><a class="footer-link" href="#">about</a></li>
+              <li><a class="footer-link" href="#">magazine</a></li>
             </ul>
           </div>
-          <div class="about-fotter-list">
+          <div class="about-footer-list">
             <h3 class="footer-h3">account</h3>
             <ul class="footer-ul">
-              <li>sign up</li>
-              <li>redeem voucher</li>
-              <li>redeem giftcard</li>
-              <li>manage account</li>
-              <li>store</li>
+              <li><a class="footer-link" href="#">sign up</a></li>
+              <li><a class="footer-link" href="#">redeem voucher</a></li>
+              <li><a class="footer-link" href="#">redeem giftcard</a></li>
+              <li><a class="footer-link" href="#">manage account</a></li>
+              <li><a class="footer-link" href="#">store</a></li>
             </ul>
           </div>
-          <div class="about-fotter-list">
+          <div class="about-footer-list">
             <h3 class="footer-h3">company</h3>
             <ul class="footer-ul">
-              <li>partners</li>
-              <li>careers</li>
-              <li>press</li>
+              <li><a class="footer-link" href="#">partners</a></li>
+              <li><a class="footer-link" href="#">careers</a></li>
+              <li><a class="footer-link" href="#">press</a></li>
             </ul>
           </div>
         </div>
       </footer>
       <footer class="social-footer">
-        <div class="social-icons">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
+        <div class="social-icons-container">
+          <a class="social-icons" href="#"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="social-icons" href="#"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a class="social-icons" href="#"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </div>
       </footer>
     </main>
